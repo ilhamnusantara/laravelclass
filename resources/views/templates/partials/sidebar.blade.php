@@ -12,7 +12,7 @@
           <li><a class="treeview-item" href="{{ route('article.create') }}"><i class="icon fa fa-circle-o"></i> Tulis Artikel</a></li>
         </ul>
       </li>
-
+      <li><a class="app-menu__item" href="{{url('users')}}"><i class="app-menu__icon fa fa-group"></i><span class="app-menu__label">Users</span></a></li>
 
     </ul>
   </aside>

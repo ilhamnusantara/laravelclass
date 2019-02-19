@@ -12,7 +12,7 @@
                             <div class="form-group">
                                 <label for="">Judul</label>
                                 <input type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" name="title"
-                                value="{{old('title')}}">
+                                       value="{{old('title')}}">
                                 @if ($errors->has('title'))
                                     <div class="form-control-feedback">{{ $errors->first('title') }}</div>
                                 @endif
