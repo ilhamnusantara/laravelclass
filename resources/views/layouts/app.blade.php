@@ -18,6 +18,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="salinan/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="salinan/css/blog-home.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -50,14 +58,15 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="{{url('article')}}"><i class="fa fa-cog fa-lg"></i> Dashbord</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"class="fa fa-signout fa-lg"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-lg"></i>
                                         {{ __('Logout') }}
                                     </a>
 
@@ -75,6 +84,21 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
+    <!-- jQuery -->
+    <script src="salinan/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="salinan/js/bootstrap.min.js"></script>
 </body>
 </html>

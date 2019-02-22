@@ -31,3 +31,5 @@ Route::resource('article', 'ArticleController')->middleware('auth');
 
 Route::get('users', 'UserController@index')->middleware('auth');
 Route::get('user/{id}', 'UserController@show')->middleware('auth');
+
+//Route::get('');

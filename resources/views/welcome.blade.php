@@ -1,98 +1,174 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('content')
 
-        <title>Laravel</title>
+<!-- Page Content -->
+<div class="container">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    <div class="row">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
 
-            .full-height {
-                height: 100vh;
-            }
+            <h1 class="page-header">
+                Page Heading
+                <small>Secondary Text</small>
+            </h1>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+            <!-- First Blog Post -->
+            <h2>
+                <a href="#">Blog Post Title</a>
+            </h2>
+            <p class="lead">
+                by <a href="index.php">Start Bootstrap</a>
+            </p>
+            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
+            <hr>
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
+            <a class="btn btn-primary" href<!-- Second Blog Post -->
+                <h2>
+                    <a href="#">Blog Post Title</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-            .position-ref {
-                position: relative;
-            }
+                <hr>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+                <!-- Third Blog Post -->
+                <h2>
+                    <a href="#">Blog Post Title</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-            .content {
-                text-align: center;
-            }
+                <hr>
+                ="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-            .title {
-                font-size: 84px;
-            }
+            <hr>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+            <!-- Second Blog Post -->
+            <h2>
+                <a href="#">Blog Post Title</a>
+            </h2>
+            <p class="lead">
+                by <a href="index.php">Start Bootstrap</a>
+            </p>
+            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+            <hr>
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
+            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+            <hr>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+            <!-- Third Blog Post -->
+            <h2>
+                <a href="#">Blog Post Title</a>
+            </h2>
+            <p class="lead">
+                by <a href="index.php">Start Bootstrap</a>
+            </p>
+            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+            <hr>
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
+            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            <hr>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="previous">
+                    <a href="#">&larr; Older</a>
+                </li>
+                <li class="next">
+                    <a href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+
         </div>
-    </body>
-</html>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Blog Search Well -->
+            <div class="well">
+                <h4>Blog Search</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                </div>
+                <!-- /.input-group -->
+            </div>
+
+            <!-- Blog Categories Well -->
+            <div class="well">
+                <h4>Blog Categories</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                            <li><a href="#">Category Name</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+
+            <!-- Side Widget Well -->
+            <div class="well">
+                <h4>Side Widget Well</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <hr>
+</div>
+<!-- /.container -->
+
+@endsection
